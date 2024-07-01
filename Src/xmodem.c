@@ -113,6 +113,8 @@ void xmodem_receive(void)
  */
 static uint16_t xmodem_calc_crc(uint8_t *data, uint16_t length)
 {
+    // calc crc algo is
+    // TODO: can new algo be found..
     uint16_t crc = 0u;
     while (length)
     {
